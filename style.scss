@@ -606,6 +606,17 @@ footer {
         margin: auto;
         border-top: 8px solid $primary-color;
     }
+
+    .footer-bottom {
+        text-align: center;
+        background-color: $white;
+       
+        padding: 8px 0px;
+
+        p{
+            font-size: 14px;
+        }
+    }
 }
 
 #main-pet {

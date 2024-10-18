@@ -589,6 +589,14 @@ footer iframe {
   margin: auto;
   border-top: 8px solid #c0a172;
 }
+footer .footer-bottom {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 8px 0px;
+}
+footer .footer-bottom p {
+  font-size: 14px;
+}
 
 #main-pet .banner {
   justify-content: flex-start;
