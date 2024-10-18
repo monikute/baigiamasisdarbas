@@ -108,7 +108,7 @@ h4 {
 
 .cta-button {
   padding: 8px 32px;
-  background-color: #81aa8b;
+  background-color: #c0a172;
   color: #ffffff;
   border-radius: 40px;
   border: 0px;
@@ -129,12 +129,12 @@ h4 {
 }
 
 .button:hover {
-  background: #81aa8b;
+  background: #c0a172;
   color: #ffffff;
 }
 
 .cta-button:hover {
-  background: #548d62;
+  background: #b38b4f;
 }
 
 p {
@@ -210,7 +210,7 @@ nav {
   position: fixed;
   top: 0px;
   bottom: auto;
-  box-shadow: rgba(129, 170, 139, 0.4) 0px 5px, rgba(84, 141, 98, 0.3) 0px 10px, rgba(53, 90, 62, 0.2) 0px 15px;
+  box-shadow: rgba(192, 161, 115, 0.4) 0px 5px, rgba(179, 139, 79, 0.3) 0px 10px, rgba(156, 115, 53, 0.2) 0px 15px;
 }
 nav .container {
   display: flex;
@@ -231,7 +231,7 @@ nav .container .burger {
 nav .container .burger .line {
   width: 24px;
   height: 2px;
-  background-color: #81aa8b;
+  background-color: #c0a172;
   margin: 3px 0;
 }
 @media only screen and (max-width: 1220px) {
@@ -298,7 +298,7 @@ main .banner .banner-text h3 {
   }
 }
 main .banner .banner-text #name {
-  color: #81aa8b;
+  color: #c0a172;
 }
 main .banner .banner-text h1 {
   margin-bottom: 80px;
@@ -429,7 +429,7 @@ main .banner .link-mobile {
   display: flex;
   justify-content: flex-end;
   margin-top: -80px;
-  z-index: 80;
+  z-index: 2;
   position: relative;
 }
 @media only screen and (max-width: 496px) {
@@ -446,6 +446,64 @@ main .banner .link-mobile {
   .img-divider img {
     height: 240px;
   }
+}
+
+.img-divider-form {
+  margin-bottom: -185px;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -80px;
+  z-index: 2;
+  position: relative;
+}
+@media only screen and (max-width: 680px) {
+  .img-divider-form {
+    margin-bottom: -175px;
+    margin-top: -64px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .img-divider-form {
+    margin-bottom: -164px;
+    margin-top: 0px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .img-divider-form {
+    display: none;
+  }
+}
+.img-divider-form img {
+  width: auto;
+  height: 320px;
+}
+@media only screen and (max-width: 680px) {
+  .img-divider-form img {
+    height: 240px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .img-divider-form img {
+    height: 160px;
+  }
+}
+
+.img-divider-other {
+  margin-bottom: -185px;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -64px;
+  z-index: 2;
+  position: relative;
+}
+@media only screen and (max-width: 1200px) {
+  .img-divider-other {
+    display: none;
+  }
+}
+.img-divider-other img {
+  width: auto;
+  height: 320px;
 }
 
 @media only screen and (max-width: 496px) {
@@ -516,26 +574,27 @@ main .banner .link-mobile {
   margin-bottom: 0px;
 }
 #kontaktai a:hover {
-  color: #548d62;
+  color: #b38b4f;
 }
 #kontaktai i {
   margin-right: 8px;
 }
 
 footer {
-  border-top: 4px solid #81aa8b;
+  border-top: 4px solid #c0a172;
   margin-top: 103px;
 }
 footer iframe {
   width: 100%;
   margin: auto;
-  border-top: 8px solid #81aa8b;
+  border-top: 8px solid #c0a172;
 }
 
 #main-pet .banner {
-  display: flex;
-  align-items: center;
   justify-content: flex-start;
+}
+#main-pet .banner a {
+  z-index: 3;
 }
 @media only screen and (max-width: 991px) {
   #main-pet .banner a {
@@ -573,7 +632,6 @@ footer iframe {
 #main-pet .banner img {
   max-height: 560px;
   height: auto;
-  width: auto;
   border-radius: 64px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
@@ -596,4 +654,87 @@ footer iframe {
        object-fit: cover;
     border-radius: 32px;
   }
+}
+
+#main-anketa .banner-text h1 {
+  margin-bottom: 16px;
+}
+#main-anketa .anketa form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+#main-anketa .anketa form .form-row {
+  display: flex;
+}
+@media only screen and (max-width: 991px) {
+  #main-anketa .anketa form .form-row {
+    flex-direction: column;
+  }
+}
+#main-anketa .anketa form .form-row .form-inner {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-right: 24px;
+}
+#main-anketa .anketa form .form-row .form-inner:last-child {
+  margin-right: 0px;
+}
+#main-anketa .anketa form .form-row .form-inner label {
+  margin-bottom: 4px;
+  font-size: 14px;
+}
+#main-anketa .anketa form .form-row .form-inner textarea {
+  z-index: 3;
+  padding: 12px 16px;
+  border-radius: 24px;
+  border: 1px solid #f0f0f0;
+  background-color: #ffffff;
+  box-shadow: rgba(149, 157, 165, 0.1) 0px 0px 24px;
+  margin-bottom: 8px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5;
+  font-size: 16px !important;
+  min-width: 100%;
+}
+#main-anketa .anketa form .form-row .form-inner textarea:focus {
+  border: 1px solid #f0f0f0;
+}
+#main-anketa .anketa form .form-row .form-inner input,
+#main-anketa .anketa form .form-row .form-inner select {
+  z-index: 3;
+  padding: 12px 16px;
+  border-radius: 40px;
+  border: 1px solid #f0f0f0;
+  background-color: #ffffff;
+  box-shadow: rgba(149, 157, 165, 0.1) 0px 0px 24px;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+#main-anketa .anketa form .form-row .form-inner input:focus,
+#main-anketa .anketa form .form-row .form-inner select:focus {
+  border: 1px solid #f0f0f0;
+}
+#main-anketa .anketa form .form-row .form-inner select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23131313%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.7rem top 50%;
+  background-size: 0.65rem auto;
+}
+#main-anketa .anketa form .form-alert {
+  font-size: 14px;
+  margin-top: 24px;
+  margin-bottom: 16px;
+  color: #b90909;
+}
+#main-anketa .anketa form button {
+  width: -moz-fit-content;
+  width: fit-content;
+  z-index: 3;
 }/*# sourceMappingURL=style.css.map */

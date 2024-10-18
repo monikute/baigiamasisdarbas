@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="lt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gyvūnų prieglauda</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <a href="index.html"
+          ><img src="img/logo.png" alt="logo sosgyvunai" class="logo"
+        /></a>
+        <div class="burger" id="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <ul id="nav-links">
+          <li class="nav-links">
+            <a href="index.html#gyvunai">Dovanojami gyvūnai</a>
+          </li>
+          <li class="nav-links">
+            <a href="index.html#parama">Paramos būdai</a>
+          </li>
+          <li class="nav-links">
+            <a href="index.html#kontaktai">Kontaktai</a>
+          </li>
+          <li class="nav-links">
+            <a href="#" target="_blank" class="cta-button"
+              >Norintiems augintinio</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main id="main-anketa">
+      <div class="container">
+        <div class="container-frame">
+          <div class="banner">
+            <div class="banner-text">
+              <h1>Anketa norintiems augintinio</h1>
+              <p>
+                Anketa, skirta norintiems pasiimti gyvūną, padeda prieglaudai
+                suprasti jūsų gyvenimo būdą, aplinką ir pasiruošimą rūpintis
+                nauju augintiniu. Tai svarbus žingsnis, siekiant užtikrinti, kad
+                gyvūnas patektų į tinkamus, mylinčius ir atsakingus namus, kur
+                jo poreikiai bus pilnai patenkinti.
+              </p>
+            </div>
+          </div>
+          <div class="anketa">
+            <form id="petForm">
+              <div class="form-row">
+                <div class="form-inner">
+                  <label for="name">Vardas*:</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                    pattern="^[a-zA-Z\s]+$"
+                    title="Vardas gali būti sudarytas tik iš raidžių"
+                  />
+                </div>
+                <div class="form-inner">
+                  <label for="surname">Pavardė*:</label>
+                  <input
+                    type="text"
+                    id="surname"
+                    name="surname"
+                    required
+                    pattern="^[a-zA-Z\s]+$"
+                    title="Pavardė gali būti sudaryta tik iš raidžių"
+                  />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-inner">
+                  <label for="birthYear">Gimimo metai*:</label>
+                  <input
+                    type="number"
+                    id="birthYear"
+                    name="birthYear"
+                    min="1964"
+                    max="2006"
+                    required
+                    title="Gimimo data negali būti mažesnė nei 1964 ir didesnė nei 2006"
+                  />
+                </div>
+                <div class="form-inner">
+                  <label for="socialLink">Socialinių tinklų nuoroda:</label>
+                  <input
+                    type="url"
+                    id="socialLink"
+                    name="socialLink"
+                    title="Įveskite nuorodą"
+                  />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-inner">
+                  <label for="email">El. paštas*:</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    title="Įveskite galiojantį el. pašto adresą"
+                  />
+                </div>
+                <div class="form-inner">
+                  <label for="phone">Telefono numeris*:</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    required
+                    value="+3706"
+                    pattern="^\+?[0-9]{7,15}$"
+                    title="Įveskite galiojantį telefono numerį"
+                  />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-inner">
+                  <label for="city">Miestas*:</label>
+                  <input
+                    type="text"
+                    id="city"
+                    name="city"
+                    required
+                    title="Įveskite miestą"
+                  />
+                </div>
+                <div class="form-inner">
+                  <label for="housing">Gyvenamasis būstas*:</label>
+                  <select id="housing" name="housing" required>
+                    <option value="namas">Namas</option>
+                    <option value="nuomojamas">Nuomojamas būstas</option>
+                    <option value="nuosavas">Nuosavas būstas</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-inner">
+                  <label for="familySize"
+                    >Asmenų šeimoje skaičius ir jų amžius*:</label
+                  >
+                  <textarea
+                    id="familySize"
+                    name="familySize"
+                    rows="3"
+                    required
+                    title="Įveskite šeimos narių skaičių ir jų amžių"
+                  ></textarea>
+                </div>
+                <div class="form-inner">
+                  <label for="whyPet">Kodėl norite augintinio?*</label>
+                  <textarea
+                    id="whyPet"
+                    name="whyPet"
+                    rows="3"
+                    title="Parašykite, kodėl norite augintinio"
+                    required
+                  ></textarea>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-inner">
+                  <label for="otherPets">Ar turite kitų augintinių?*</label>
+                  <select id="otherPets" name="otherPets" required>
+                    <option value="taip">Taip</option>
+                    <option value="ne">Ne</option>
+                  </select>
+                </div>
+                <div class="form-inner">
+                  <label for="financiallyAble"
+                    >Ar esate finansiškai pajėgus išlaikyti augintinį?*</label
+                  >
+                  <select id="financiallyAble" name="financiallyAble" required>
+                    <option value="taip">Taip</option>
+                    <option value="ne">Ne</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-inner">
+                  <label for="preferredPet"
+                    >Dominantis augintinis (jeigu turite išsirinkę):</label
+                  >
+                  <input type="text" id="preferredPet" name="preferredPet" />
+                </div>
+                <div class="form-inner">
+                  <label for="petCharacter"
+                    >Svarbios augintinio charakterio savybės*:</label
+                  >
+                  <input
+                    id="petCharacter"
+                    name="petCharacter"
+                    required
+                    title="Parašykite svarbias augintinio charakterio savybes"
+                  />
+                </div>
+              </div>
+              <p class="form-alert">* Pažymėti laukai yra privalomi!</p>
+              <button type="submit" class="cta-button">Pateikti</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="container img-divider-form">
+      <img src="img/img3.webp" alt="Šuo" />
+    </div>
+    <section id="kontaktai">
+      <div class="container">
+        <div class="last-container-frame">
+          <h2>Kontaktai</h2>
+          <h3>Prieglauda Vilniuje</h3>
+          <p>Vilniaus pl. 1, Vilnius</p>
+          <p>Darbo laikas: I-VII 10:00 - 18:00 val.</p>
+          <br />
+
+          <p>
+            <i class="fa-solid fa-envelope"></i
+            ><a href="mailto:info@gyvunai.lt">info@gyvunai.lt</a>
+          </p>
+          <p><i class="fa-solid fa-phone"></i>+370 612 34567</p>
+          <p>
+            <br />
+            Norint pamatyti gyvūnus dėl susitikimo iš anksto susitarkite
+            telefonu.
+          </p>
+          <div class="info">
+            <h4>Bendradarbiavimui:</h4>
+
+            <p>
+              <i class="fa-solid fa-envelope"></i
+              ><a href="mailto:projektai@gyvunai.lt">projektai@gyvunai.lt</a>
+            </p>
+            <h4>Savanorystės klausimais:</h4>
+
+            <p>
+              <i class="fa-solid fa-envelope"></i>
+              <a href="mailto:savanoryste@gyvunai.lt">savanoryste@gyvunai.lt</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2308.5485912297627!2d25.31172197703155!3d54.64716657660351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dd95a9b4b89613%3A0x57e381369a471855!2sSOS%20gyv%C5%ABnai!5e0!3m2!1slt!2slt!4v1729157663202!5m2!1slt!2slt"
+        height="400"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </footer>
+    <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/d9f78b323e.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
